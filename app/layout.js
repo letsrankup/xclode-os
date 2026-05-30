@@ -1,18 +1,14 @@
-// src/app/layout.js
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata = {
-  title: 'SEO Audit Pro',
-  description: 'Deep Website Analysis & Ranking Tool',
+  title: 'XcloDE — SEO Audit Pro',
+  description: 'Most powerful SEO tool',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body style={{ margin: 0, padding: 0, background: '#020008' }}>
         {children}
       </body>
     </html>
