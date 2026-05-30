@@ -1,16 +1,20 @@
+// src/app/layout.js
+import { Inter } from 'next/font/google'
 import './globals.css'
 
+const inter = Inter({ subsets: ['latin'] })
+
 export const metadata = {
-  title: 'XYNTRA AI // Agency OS',
-  description: 'Enterprise Multi-Agent Autonomous Operating System',
+  title: 'SEO Audit Pro',
+  description: 'Deep Website Analysis & Ranking Tool',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#05050a] text-[#00ffcc] font-mono min-h-screen selection:bg-[#00ffcc] selection:text-black">
+      <body className={inter.className}>
         {children}
       </body>
     </html>
   )
-    }
+}
